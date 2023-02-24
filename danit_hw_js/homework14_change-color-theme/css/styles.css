@@ -1,0 +1,126 @@
+html.light {
+  --color-bg: #ffffff;
+  --color-text: #373737;
+}
+html.dark {
+  --color-bg: #373737;
+  --color-text: #ffffff;
+}
+img {
+  border: 1px solid white;
+}
+body {
+  background-color: var(--color-bg);
+  transition: 0.15s;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header__nav {
+  display: flex;
+  padding-top: 31px;
+  padding-bottom: 31px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  justify-content: center;
+}
+
+.header__item {
+  transition: 0.15s;
+  user-select: none;
+}
+
+.header__item:not(:last-child) {
+  margin-right: 72px;
+}
+
+.header__item:hover {
+  opacity: 0.5;
+}
+
+.header__link {
+  align-items: center;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+.change-theme {
+  color: var(--color-text);
+  position: relative;
+  top: -3px;
+  left: 2px;
+}
+
+.main-img {
+  margin-bottom: 49px;
+}
+.title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: 3.3px;
+  text-transform: uppercase;
+  color: var(--color-text);
+  display: flex;
+  justify-content: center;
+  padding-bottom: 38px;
+}
+.subtitle {
+  font-family: "Montserrat";
+  line-height: 26px;
+  letter-spacing: 2.4px;
+  color: var(--color-text);
+  text-align: center;
+  margin: 0px 67.5px;
+  padding-bottom: 28px;
+}
+
+.subtitle:last-child {
+  padding-bottom: 66px;
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+  padding: 18px 43.5px 17px 42.5px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #ff0000;
+  border-radius: 4px;
+  border: none;
+  transition: 0.15s;
+}
+
+.button:hover {
+  opacity: 0.5;
+}
+
+.main {
+  margin-bottom: 82px;
+}
+.footer {
+  margin-bottom: 29px;
+}
+.copyright {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 105px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 2.4px;
+  color: var(--color-text);
+}
